@@ -169,11 +169,11 @@ main{
 }
 .info-ben p{
     font-size: 20px;
-    font-weight: 800;
+    
 }
 .cards{
   display: flex;
-  gap: 100px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   margin: 80px 0 80px 0;
@@ -284,6 +284,13 @@ main{
     margin-bottom: 80px;
     color:var(--chocolate-cosmos)
 }
+#time h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--claret);
+    font-size: 35px;
+}
 #time h3{
     color: var(--rose-red);
 }
@@ -334,11 +341,248 @@ footer{
     
     color: black;
     
+} 
+
+#menu-t {
+  display: none;
 }
+
 body{
     background-color: var(--lavender-blush)
 }
 
+/* Mediaqueries */ 
 
+@media (max-width: 1800px){
+    .buttons-header a{
+        padding: 8px 18px 8px 18px;
+        font-size: 14px;
+     }
+     .navbar-header ul a{
+        font-size: 14px;
+     }
+     .hero_info h1{
+        font-size: 70px;
+        max-width: 1000px;
+        margin-top: 20px;
+        
+     }
+     .hero_info p{
+        font-size: 35px;
+     }
+     .buttons_hero a{
+        text-decoration: none;
+        color: var(--lavender-blush);
+        font-size: 23px;
+        background: var(--chocolate-cosmos);
+        padding: 12px 17px 12px 17px;
+        border-radius: 20px;
+        
+    
+    }
+     
+    #beneficios{
+        
+        max-width: 1000px;
+       
+    }
+    
+    .info-ben h2{
+        font-size: 40px;
+        
+    
+    }
+    .info-ben p{
+        font-size: 18px;
+        font-weight: 800;
+        
+    }
+    
+    .cards img{
+        width: 450px;
+    }
+    .precios{
+        max-width: 1300px;
+    }
+    
+    .info-precios h2{
+        font-size: 40px;
+    }
+    .info-precios p{
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .info-precios span{
+        padding: 8px 18px 8px 18px;
+        font-size: 18px;
+    }
+    .polit{
+        gap: 500px;    
+    }
+    
+}
+@media(max-width: 1430px){
+
+    #nosotros{
+        max-width: 800px;
+        gap: 80px;
+    }
+    .info-nos{
+        gap: 20px;
+        
+    }
+    .info-nos h2{
+        font-size: 30px;
+    }
+    .info-nos p{
+        font-size: 20px;
+    }
+    
+    .info-ben{
+        
+        gap: 20px;
+    }
+    
+    .introduction{
+        max-width: 800px;
+        gap: 40px;
+    }
+    .introduction h2{
+        font-size: 25px;
+    }
+    .introduction p{
+        font-size: 20px;
+    }
+
+    #beneficios{  
+        max-width: 800px;
+        margin-top: 100px;
+    }
+
+    .info-ben h2{
+        font-size: 27px;
+        max-width: 400px;
+
+    }
+    .info-ben p{
+        font-size: 18px;
+        max-width: 600px;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .cards p{
+        max-width: 400px;
+    }
+
+    .info-precios h2{
+        font-size: 25px;
+
+    }
+    .info-precios p{
+        font-size: 18px;
+    }
+    .info-precios span{
+        font-size: 15px;
+    }
+
+    .cards-precios{
+        max-width: 800px;
+        
+    }
+    .cards-precios h3{
+        font-size: 18px;
+    }
+   .cards-precios p{
+    font-size: 16px;
+   }
+   .cards-precios a{
+    font-size: 15px;
+   }
+
+   #time{
+    max-width: 800px;
+    flex-wrap: wrap;
+    gap: 70px;
+   }
+   #time h2{
+    font-size: 25px;
+   }
+   .img-time{
+    display: none;
+   }
+  
+}
+@media(max-width: 992px){
+ .navbar-header ul{
+    position: absolute;
+    align-items: center;
+    top: 87px;
+    left: 5%;
+    right: 5%;
+    padding: 25px 0;
+    flex-direction: column;
+    width: 90%;
+    gap: 30px;
+    background-color: var(--bright-pink-crayola);
+    border: solid 3px var(--lavender-blush);
+    border-top: 0;
+    border-radius: 0 0 15px 15px;
+    display: none;
+    
+ }
+ #menu-t:checked + ul {
+    display: flex;
+  }
+
+  #hero{
+    background-image: url(./imagenes/descarga.jpg);
+  }
+
+  #hero h1{
+    font-size: 40px;
+    color: var(--rose-red);
+    font-weight: 900;
+    
+  }
+  #hero p{
+    font-size: 30px;
+    color: var(--rose-red);
+    font-weight: 900;
+  }
+  #nosotros img{
+    display: none;
+  }
+  .info-nos{
+    max-width: 500px;
+  }
+  .introduction{
+    max-width: 500px;
+    flex-direction: column;
+  }
+
+  .info-ben{
+    max-width: 600px;
+  }
+  .info-ben p{
+   font-weight: 500;
+  }
+  .cards-precios{
+    flex-wrap: wrap;
+  }
+
+  footer{
+    .polit{
+        max-width: 800px;    
+        gap: 200px;
+    }
+  }
+
+}
+@media(max-width: 600px){
+    body{
+        display: none;
+    }
+}
 
 
