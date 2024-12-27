@@ -59,7 +59,7 @@ main{
 
 h1 {
     margin-bottom: 20px;
-    color: var(--claret);
+    color: #333;
 }
 
 .form-dats {
