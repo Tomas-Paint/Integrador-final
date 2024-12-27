@@ -99,6 +99,36 @@ button a{
     color: var(--lavender-blush);
 }
 
+/* Mediaqueries */ 
+
+@media (max-width: 1800px){
+    .polit{
+        gap: 500px;    
+    }
+    
+}
+
+@media(max-width: 992px){
+
+    footer{
+        .polit{
+            max-width: 800px;    
+            gap: 200px;
+        }
+      }
+
+}
+
+@media(max-width: 600px){
+    footer{
+        .polit{
+            max-width: 400px;    
+            gap: 30px;
+        }
+      }
+}
+
+
 
 
 
